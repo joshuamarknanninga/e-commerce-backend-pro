@@ -26,13 +26,4 @@ const productData = [
     category_id: 3,
   },
   {
-    product_name: 'Cargo Shorts',
-    price: 29.99,
-    stock: 22,
-    category_id: 2,
-  },
-];
-
-const seedProducts = () => Product.bulkCreate(productData);
-
-module.exports = seedProducts;
+    prod

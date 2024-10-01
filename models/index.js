@@ -1,14 +1,14 @@
 // models/index.js
 
-// Import models
-const Product = require('./Product');
+const sequelize = require('../config/connection');
 const Category = require('./Category');
+const Product = require('./Product');
 const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
 
-// Associations
+// Define Associations
 
-// Products belong to a single Category
+// Products belong to a Category
 Product.belongsTo(Category, {
   foreignKey: 'category_id',
   onDelete: 'SET NULL',
@@ -32,8 +32,9 @@ Tag.belongsToMany(Product, {
 });
 
 module.exports = {
-  Product,
+  sequelize,
   Category,
+  Product,
   Tag,
   ProductTag,
 };
