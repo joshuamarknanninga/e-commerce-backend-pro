@@ -8,6 +8,4 @@
     "start": "node server.js",
     "seed": "node seeds/index.js"
   },
-  "author": "",
-  "license": "ISC"
-}
+  
