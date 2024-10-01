@@ -11,4 +11,6 @@ const tagData = [
   { tag_name: 'pop culture' },
 ];
 
-const seed
+const seedTags = () => Tag.bulkCreate(tagData);
+
+module.exports = seedTags;

@@ -7,10 +7,10 @@ const sequelize = new Sequelize(
   process.env.joshuamarknanninga,
   process.env['12345'],
   {
-    host: 'localhost',
+    host: process.env.DB_HOST || 'localhost',
     dialect: 'postgres',
-    port: 5432,
-    logging: console.log
+    port: process.env.DB_PORT || 5432,
+    loggin
   }
 );
 
