@@ -5,7 +5,7 @@ const Sequelize = require('sequelize');
 const sequelize = new Sequelize(
   process.env.ecommerce,
   process.env.joshuamarknanninga,
-  process.env.12345,
+  process.env['12345'],
   {
     host: 'localhost',
     dialect: 'postgres',
