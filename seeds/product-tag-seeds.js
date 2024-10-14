@@ -36,3 +36,5 @@ const productTagData = [
   {
     product_id: 4,
     tag_id
+
+  }]
